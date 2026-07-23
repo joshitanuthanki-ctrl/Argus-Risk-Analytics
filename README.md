@@ -28,6 +28,16 @@ Inspired by institutional credit risk workflows, the project replicates the majo
  Requests
  Joblib
 
+## Models
+
+The project evaluates multiple credit risk modeling approaches, combining traditional financial risk methods with machine learning techniques:
+
+Altman Z-Score Benchmark — industry-standard financial distress indicator used as a baseline comparison
+Logistic Regression — interpretable baseline model for Probability of Default estimation
+Gradient Boosting Classifier — captures nonlinear relationships between financial variables
+XGBoost Classifier — advanced boosting model for predictive risk classification
+Probability Calibration — converts model outputs into reliable PD estimates for credit risk applications
+
 ## Project Workflow
 
 1. Collect corporate financial statement data.
@@ -64,3 +74,29 @@ This project demonstrates concepts used in:
 
 This project was developed for educational and portfolio purposes to demonstrate quantitative finance, machine learning, and credit risk modeling techniques. It is not intended for production or investment decision-making.
 
+## Results and Model Evaluation
+
+The model evaluates corporate credit risk using multiple approaches, including statistical and machine learning-based methods
+Key Outputs include:
+- Financial ratio analysis and feature engineering
+- PD scoring
+- Corporate risk band classification (AAA-D)
+- MOdel Comparision using
+    -ROC-AUC
+    -Gini coefficient
+    -KS statistic
+    -Calibration metrics
+
+  The pipelines generates:
+  - Firm level PD scores
+  - Risk category assignments
+  - Model validation reports
+  - Credit risk distribution analysis
+ 
+## Example Outputs
+The notebook produces
+- Credit Risk feature analysis
+- Model classification reports
+- Risk banded firm scoring
+- PD distribution analysis
+- Validation comparisions between Altman Z-score benchmark, logistic regression, gradient boosting and XGBoost.
